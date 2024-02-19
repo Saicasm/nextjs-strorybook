@@ -22,3 +22,15 @@ After installing the dependencies, you can start the development server:
 ```
 This will start the Next.js development server. Open http://localhost:3000 to view the application in your browser.
 
+
+
+Project Structure
+The project is organized to maintain a clean and scalable codebase. Here's an overview of the project structure:
+
+nextjs-storybook/
+├── components/          # Common reusable components
+├── hooks/                # Next.js page components
+├── stories/             # Storybook stories for components
+├── .storybook/          # Storybook configuration
+├── utils /              # Static files
+└── ...
