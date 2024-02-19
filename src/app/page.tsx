@@ -4,6 +4,7 @@ import Image from "next/image";
 import Button from "@/components/Button/Button";
 import CustomSelect from "@/components/Select/Select";
 import { useState } from "react";
+import Card from "@/components/Card/Card";
 
 export default function Home() {
   const options = [
@@ -32,6 +33,12 @@ export default function Home() {
           priority
         />
       </div> */}
+      <Card
+        title='Sample Card Title'
+        description='This is a sample card component.'
+        // imageUrl='https://via.placeholder.com/300'
+        className='bg-slate-500 text-zinc-950' // Example of additional Tailwind classes for customization
+      />
       <Button onClick={handleClick} variant='primary'>
         Primary Button
       </Button>
