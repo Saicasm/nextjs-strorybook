@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js with Storybook Project
 
-## Getting Started
 
-First, run the development server:
+This project serves as an example of how to organize code effectively using Next.js along with Storybook. It demonstrates the usage of Storybook in a Next.js project for developing and showcasing UI components.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+## Installation
+To get started, clone this repository and navigate to the project directory:
+
+```git clone <repository-url>
+cd nextjs-storybook
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Install the dependencies:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+npm install
+```
+## Usage
+After installing the dependencies, you can start the development server:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```
+npm run dev
+```
+This will start the Next.js development server. Open http://localhost:3000 to view the application in your browser.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
+The project is organized to maintain a clean and scalable codebase. Here's an overview of the project structure:
+```
+nextjs-storybook/
+├── components/          # Common reusable components
+├── hooks/                # Next.js page components
+├── stories/             # Storybook stories for components
+├── .storybook/          # Storybook configuration
+├── utils /              # Static files
+└── ...
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Storybook
+Storybook is integrated into the project for showcasing UI components. To start Storybook, run the following command:
+```bash
+npm run storybook
 
-## Deploy on Vercel
+```
+This will start Storybook on http://localhost:6006.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Unit Test Cases
+Unit test cases are written using Jest and React Testing Library. You can run the tests using the following command:
+```
+npm test
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Writing Common Components
+Common components are stored in the components/ directory. These components are designed to be reusable across different parts of the application.
+
+## Scripts
+- ```npm run dev```: Starts the Next.js development server
+- ```npm run build```: Builds the Next.js application.
+- ```npm start```: Starts the Next.js production server.
+- ```npm run lint```: Lints the project files using ESLint.
+- ```npm run storybook```: Starts Storybook for showcasing UI components.
+- ```npm run build-storybook```: Builds Storybook for deployment.
+- ```npm test```: Runs unit tests using Jest.
