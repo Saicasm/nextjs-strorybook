@@ -44,3 +44,22 @@ Storybook is integrated into the project for showcasing UI components. To start 
 npm run storybook
 
 ```
+This will start Storybook on http://localhost:6006.
+
+## Unit Test Cases
+Unit test cases are written using Jest and React Testing Library. You can run the tests using the following command:
+```
+npm test
+```
+
+## Writing Common Components
+Common components are stored in the components/ directory. These components are designed to be reusable across different parts of the application.
+
+## Scripts
+```npm run dev```: Starts the Next.js development server.
+npm run build: Builds the Next.js application.
+npm start: Starts the Next.js production server.
+npm run lint: Lints the project files using ESLint.
+npm run storybook: Starts Storybook for showcasing UI components.
+npm run build-storybook: Builds Storybook for deployment.
+npm test: Runs unit tests using Jest.
