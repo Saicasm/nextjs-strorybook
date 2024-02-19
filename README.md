@@ -56,10 +56,10 @@ npm test
 Common components are stored in the components/ directory. These components are designed to be reusable across different parts of the application.
 
 ## Scripts
-```npm run dev```: Starts the Next.js development server.
-npm run build: Builds the Next.js application.
-npm start: Starts the Next.js production server.
-npm run lint: Lints the project files using ESLint.
-npm run storybook: Starts Storybook for showcasing UI components.
-npm run build-storybook: Builds Storybook for deployment.
-npm test: Runs unit tests using Jest.
+-```npm run dev```: Starts the Next.js development server.
+-npm run build: Builds the Next.js application.
+-npm start: Starts the Next.js production server.
+-npm run lint: Lints the project files using ESLint.
+-npm run storybook: Starts Storybook for showcasing UI components.
+-npm run build-storybook: Builds Storybook for deployment.
+-npm test: Runs unit tests using Jest.
