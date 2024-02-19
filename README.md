@@ -40,4 +40,7 @@ nextjs-storybook/
 
 ## Storybook
 Storybook is integrated into the project for showcasing UI components. To start Storybook, run the following command:
+```bash
+npm run storybook
 
+```
