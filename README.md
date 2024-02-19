@@ -26,7 +26,7 @@ This will start the Next.js development server. Open http://localhost:3000 to vi
 
 
 
-##Project Structure
+## Project Structure
 The project is organized to maintain a clean and scalable codebase. Here's an overview of the project structure:
 ```
 nextjs-storybook/
@@ -38,6 +38,6 @@ nextjs-storybook/
 └── ...
 ```
 
-##Storybook
+## Storybook
 Storybook is integrated into the project for showcasing UI components. To start Storybook, run the following command:
 
