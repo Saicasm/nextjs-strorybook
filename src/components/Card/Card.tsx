@@ -14,7 +14,9 @@ const Card: React.FC<CustomCardProps> = ({
   className,
 }) => {
   return (
-    <div className={`bg-white rounded-lg shadow-md p-6 ${className}`}>
+    <div
+      className={`bg-light-bg-secondary dark:bg-dark-bg-primary text-bittersweet-500  shadow-md p-6 ${className}`}
+    >
       {imageUrl && (
         <div className='mb-4'>
           <img
