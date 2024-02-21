@@ -38,6 +38,10 @@ const config: Config = {
             primary: "black",
             secondary: "bg-gray-500",
           },
+          border: {
+            primary: "#7F878C",
+            secondary: "bg-gray-500",
+          },
         },
       },
       backgroundImage: {
