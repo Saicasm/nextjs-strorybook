@@ -21,13 +21,13 @@ const config: Config = {
             secondary: "black",
           },
           accent: {
-            primary: "black",
-            secondary: "bg-gray-500",
+            primary: "#C2DFE3",
+            secondary: "#120D31",
           },
         },
         light: {
           bg: {
-            primary: "#7E808D",
+            primary: "#EEF0F3",
             secondary: "#F3F5F3",
           },
           text: {
@@ -35,8 +35,8 @@ const config: Config = {
             secondary: "black",
           },
           accent: {
-            primary: "black",
-            secondary: "bg-gray-500",
+            primary: "#C2DFE3",
+            secondary: "#120D31",
           },
           border: {
             primary: "#7F878C",
