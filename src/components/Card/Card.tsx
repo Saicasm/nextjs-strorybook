@@ -15,7 +15,7 @@ const Card: React.FC<CustomCardProps> = ({
 }) => {
   return (
     <div
-      className={`bg-light-bg-secondary dark:bg-dark-bg-primary text-bittersweet-500  shadow-md p-6 ${className}`}
+      className={`bg-light-bg-primary dark:bg-dark-bg-primary rounded-lg shadow-md p-6 ${className}`}
     >
       {imageUrl && (
         <div className='mb-4'>
@@ -26,8 +26,8 @@ const Card: React.FC<CustomCardProps> = ({
           />
         </div>
       )}
-      {title && <h2 className='text-xl font-semibold mb-2'>{title}</h2>}
-      {description && <p className='text-gray-700 mb-4'>{description}</p>}
+      {title && <h2 className='text-base font-semibold mb-2'>{title}</h2>}
+      {description && <p className=''>{description}</p>}
     </div>
   );
 };
