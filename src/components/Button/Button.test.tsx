@@ -13,7 +13,7 @@ describe("Button Component", () => {
 
     const button = getByText("Primary Button");
     expect(button).toBeInTheDocument();
-    expect(button).toHaveClass("bg-blue-500");
+    expect(button).toHaveClass("bg-light-primary");
     expect(button).toHaveClass("text-white");
 
     fireEvent.click(button);
