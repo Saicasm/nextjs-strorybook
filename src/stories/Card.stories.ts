@@ -15,24 +15,24 @@ const meta = {
       control: "text",
     },
   },
-
-  // More on argTypes: https://storybook.js.org/docs/api/argtypes
-  //   argTypes: {
-  //     backgroundColor: { control: "color" },
-
-  //     title
-  //     description,
-  //     imageUrl,
-  //     className,
-  //   },
 } satisfies Meta<typeof Card>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
-export const Primary: Story = {
+export const VariantOne: Story = {
   args: {
-    title: "Card Title",
-    description: "Card Description",
-    imageUrl: "https://images.unsplash.com/photo-1634304445213-3e3a6f3c1d7a",
+    title: "Cat Card Title",
+    description: "Cat Card Description",
+    imageUrl:
+      "https://as2.ftcdn.net/v2/jpg/04/91/61/71/1000_F_491617156_xYzmSVi3eTvOjGR7gVBCF2vvNf24AmGS.jpg",
+  },
+};
+
+export const VariantTwo: Story = {
+  args: {
+    title: "Dog Card ",
+    description: "Dog Card Description xD",
+    imageUrl:
+      "https://as2.ftcdn.net/v2/jpg/05/08/37/21/1000_F_508372195_H9K3KIdsqlVMDgPd0ENTa8TUXuq9L9jF.jpg",
   },
 };
