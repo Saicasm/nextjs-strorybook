@@ -26,6 +26,7 @@ export default function Home() {
       <Card
         title='Sample Card Title'
         description='This is a sample card component.'
+        imageUrl='https://as2.ftcdn.net/v2/jpg/05/08/37/21/1000_F_508372195_H9K3KIdsqlVMDgPd0ENTa8TUXuq9L9jF.jpg'
         className='bg-light-accent-primary '
       />
       <Button onClick={handleClick} variant='primary'>
