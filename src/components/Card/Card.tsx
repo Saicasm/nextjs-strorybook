@@ -1,9 +1,21 @@
 import React from "react";
 
 interface CustomCardProps {
+  /**
+   * The title of the card
+   */
   title?: string;
+  /**
+   * The description of the card
+   */
   description?: string;
+  /**
+   * The image url for the card
+   */
   imageUrl?: string;
+  /**
+   * Additional classes to be added to the card
+   */
   className?: string;
 }
 
@@ -11,7 +23,7 @@ const Card: React.FC<CustomCardProps> = ({
   title,
   description,
   imageUrl,
-  className,
+  className = "",
 }) => {
   return (
     <div

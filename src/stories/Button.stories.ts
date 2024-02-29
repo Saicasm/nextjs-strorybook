@@ -1,5 +1,6 @@
 import Button from "../components/Button/Button";
 import type { Meta, StoryObj } from "@storybook/react";
+
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
   title: "Components/Button",
@@ -10,6 +11,13 @@ const meta = {
   },
   // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
   tags: ["autodocs"],
+  argTypes: {
+    onClick: { action: "clicked" },
+    variant: {
+      options: ["primary", "secondary"],
+      control: { type: "radio" },
+    },
+  },
   // More on argTypes: https://storybook.js.org/docs/api/argtypes
   //   argTypes: {
   //     backgroundColor: { control: "color" },
@@ -31,7 +39,7 @@ export const Primary: Story = {
 };
 export const Secondary: Story = {
   args: {
+    ...Primary.args,
     variant: "secondary",
-    children: "Button",
   },
 };
