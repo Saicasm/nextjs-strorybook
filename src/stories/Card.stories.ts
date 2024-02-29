@@ -10,6 +10,12 @@ const meta = {
   },
   // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
   tags: ["autodocs"],
+  argTypes: {
+    className: {
+      control: "text",
+    },
+  },
+
   // More on argTypes: https://storybook.js.org/docs/api/argtypes
   //   argTypes: {
   //     backgroundColor: { control: "color" },
@@ -27,7 +33,6 @@ export const Primary: Story = {
   args: {
     title: "Card Title",
     description: "Card Description",
-    className: "bg-gray-100",
     imageUrl: "https://images.unsplash.com/photo-1634304445213-3e3a6f3c1d7a",
   },
 };

@@ -23,7 +23,7 @@ const Card: React.FC<CustomCardProps> = ({
   title,
   description,
   imageUrl,
-  className,
+  className = "",
 }) => {
   return (
     <div
