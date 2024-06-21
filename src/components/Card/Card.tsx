@@ -1,4 +1,5 @@
 import React from "react";
+import Image from 'next/image';
 
 interface CustomCardProps {
   /**
@@ -31,10 +32,16 @@ const Card: React.FC<CustomCardProps> = ({
     >
       {imageUrl && (
         <div className='mb-4'>
-          <img
+          <Image
             src={imageUrl}
             alt={title || "Card Image"}
             className='w-full h-auto rounded-lg'
+            width={1000}
+            height={1000}
+            style={{
+              maxWidth: "100%",
+              height: "auto",
+            }}
           />
         </div>
       )}
