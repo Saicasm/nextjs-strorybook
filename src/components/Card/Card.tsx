@@ -1,5 +1,5 @@
 import React from "react";
-import Image from 'next/image';
+import Image from "next/image";
 
 interface CustomCardProps {
   /**
@@ -31,11 +31,11 @@ const Card: React.FC<CustomCardProps> = ({
       className={`bg-light-bg-primary dark:bg-dark-bg-primary rounded-lg shadow-md p-6 ${className}`}
     >
       {imageUrl && (
-        <div className='mb-4'>
+        <div className="mb-4">
           <Image
             src={imageUrl}
             alt={title || "Card Image"}
-            className='w-full h-auto rounded-lg'
+            className="w-full h-auto rounded-lg"
             width={1000}
             height={1000}
             style={{
@@ -45,8 +45,8 @@ const Card: React.FC<CustomCardProps> = ({
           />
         </div>
       )}
-      {title && <h2 className='text-base font-semibold mb-2'>{title}</h2>}
-      {description && <p className=''>{description}</p>}
+      {title && <h2 className="text-base font-semibold mb-2">{title}</h2>}
+      {description && <p className="">{description}</p>}
     </div>
   );
 };

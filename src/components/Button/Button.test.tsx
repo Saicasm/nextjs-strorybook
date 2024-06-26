@@ -6,9 +6,9 @@ describe("Button Component", () => {
   test("renders primary button with correct styles", () => {
     const onClickMock = jest.fn();
     const { getByText } = render(
-      <Button onClick={onClickMock} variant='primary'>
+      <Button onClick={onClickMock} variant="primary">
         Primary Button
-      </Button>
+      </Button>,
     );
 
     const button = getByText("Primary Button");
@@ -23,9 +23,9 @@ describe("Button Component", () => {
   test("renders secondary button with correct styles", () => {
     const onClickMock = jest.fn();
     const { getByText } = render(
-      <Button onClick={onClickMock} variant='secondary'>
+      <Button onClick={onClickMock} variant="secondary">
         Secondary Button
-      </Button>
+      </Button>,
     );
 
     const button = getByText("Secondary Button");

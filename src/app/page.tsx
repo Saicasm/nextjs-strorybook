@@ -22,17 +22,17 @@ export default function Home() {
     console.log("Button clicked!");
   };
   return (
-    <main className='flex min-h-screen flex-col items-center justify-between p-24 bg-light-bg-primary bg-opacity-90'>
+    <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-light-bg-primary bg-opacity-90">
       <Card
-        title='Sample Card Title'
-        description='This is a sample card component.'
-        imageUrl='https://as2.ftcdn.net/v2/jpg/05/08/37/21/1000_F_508372195_H9K3KIdsqlVMDgPd0ENTa8TUXuq9L9jF.jpg'
-        className='bg-light-accent-primary '
+        title="Sample Card Title"
+        description="This is a sample card component."
+        imageUrl="https://as2.ftcdn.net/v2/jpg/05/08/37/21/1000_F_508372195_H9K3KIdsqlVMDgPd0ENTa8TUXuq9L9jF.jpg"
+        className="bg-light-accent-primary "
       />
-      <Button onClick={handleClick} variant='primary'>
+      <Button onClick={handleClick} variant="primary">
         Primary Button
       </Button>
-      <Button onClick={handleClick} variant='secondary'>
+      <Button onClick={handleClick} variant="secondary">
         Secondary Button
       </Button>
       {/* <Button onClick={handleClick} className='bg-blue-500'>
