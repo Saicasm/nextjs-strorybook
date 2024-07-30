@@ -1,4 +1,3 @@
-import { text } from "stream/consumers";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -13,34 +12,38 @@ const config: Config = {
       colors: {
         dark: {
           bg: {
-            primary: "#272727",
-            secondary: "bg-gray-100",
+            primary: "#121212",
+            secondary: "#282828",
           },
           text: {
-            primary: "white",
-            secondary: "black",
+            primary: "#212529",
+            secondary: "#495057",
           },
           accent: {
-            primary: "#C2DFE3",
-            secondary: "#120D31",
+            primary: "#81b29a",
+            secondary: "#8fbaa5",
+          },
+          border: {
+            primary: "#dee2e6",
+            secondary: "##dee2e6",
           },
         },
         light: {
           bg: {
-            primary: "#EEF0F3",
+            primary: "#FFFFFF",
             secondary: "#F3F5F3",
           },
           text: {
-            primary: "white",
+            primary: "#212529",
             secondary: "black",
           },
           accent: {
-            primary: "#C2DFE3",
-            secondary: "#120D31",
+            primary: "#81b29a",
+            secondary: "#8fbaa5",
           },
           border: {
-            primary: "#7F878C",
-            secondary: "bg-gray-500",
+            primary: "#dee2e6",
+            secondary: "##dee2e6",
           },
         },
       },
