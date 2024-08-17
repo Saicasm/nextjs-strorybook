@@ -1,0 +1,12 @@
+import axiosClient from "..";
+
+import { CreateType } from "@/util/types";
+
+
+export const createTODO = async (item: CreateType): Promise<any> => {
+  const response = await axiosClient.postForm(
+    ``,
+   data
+  );
+  return response.data;
+};

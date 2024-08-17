@@ -1,0 +1,11 @@
+import React from "react";
+import { render, screen, fireEvent } from "@testing-library/react";
+import {{properCase name}} from "./{{properCase name}}"
+
+describe("{{properCase name}} Component", () => {
+  it('renders without crashing', () => {
+    render(<{{properCase name}} />);
+    expect(screen.getByTestId('{{kebabCase name}}')).toBeInTheDocument();
+  });
+  // Add more tests as needed for your specific component
+});

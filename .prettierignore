@@ -1,0 +1,13 @@
+dist
+node_modules
+package.json
+.husky
+.idea
+
+# Ignore all hbs files:
+
+# ignore all HTML files(matches all the files with the .html extension)
+
+**/*.hbs
+
+src/plop-templates
